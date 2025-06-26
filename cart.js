@@ -1,0 +1,1 @@
+let cartButton = document.querySelectorAll(".addItem")

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimelessTicks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Roboto:wght@400;500;700&family=Sree+Krushnadevaraya&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <i class="bx bxs-watch nav_logo-icon"></i>TimelessTicks
+            </a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#featured" class="nav_link">Featured</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#products" class="nav_link">Products</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#new" class="nav_link">New</a>
+                    </li>
+                </ul>
+
+                <div class="nav_close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <div class="nav_btns">
+                <div class="nav_shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav_mode" id="nav-mode">
+                    <i class="bx bx-moon" id="change-theme"></i>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart_close" id="cart-close"></i>
+        <h2 class="cart_title-center">My Cart</h2>
+        <div class="cart_container">
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./assets/img/featured1.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Jazzmaster</h3>
+                    <span class="cart_price">$1050</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box" id="Diff1">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart_amount-number" id="Res1">1</span>
+                            <span class="cart_amount-box" id="Add1">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="./assets/img/featured3.png" alt="" class="cart_img">
+                </div>
+                <div class="cart_details">
+                    <h3 class="cart_title">Rose gold</h3>
+                    <span class="cart_price">$890</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box" id="Diff2">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart_amount-number" id="Res2">1</span>
+                            <span class="cart_amount-box" id="Add2">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart_prices">
+            <span class="cart_prices-item">2 items</span>
+            <span class="cart_prices-total">$1940</span>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home_container container grid">
+                <div class="home_img-bg">
+                    <img src="./assets/img/home.png" alt="" class="home_img">
+                </div>
+                <div class="home_social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home_social-link">Facebook</a>
+                    <a href="https://twitter.com/" target="_blank" class="home_social-link">Twitter</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home_social-link">Instagram</a>
+                </div>
+                <div class="home_data">
+                    <h1 class="home_title">
+                        NEW WATCH <br> COLLECTIONS B720
+                    </h1>
+                    <p class="home_description">
+                        Latest arrival of the new imported watches of the B720 series, with a modern and resistant
+                        design.
+                    </p>
+                    <span class="home_price">$1245</span>
+                    <div class="home_btns">
+                        <a href="#" class="button button--gray button--small">
+                            Discover
+                        </a>
+                        <button class="button home_button addItem">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured section container" id="featured">
+            <h2 class="section_title">FEATURED</h2>
+            <div class="featured_container grid">
+                <article class="featured_card">
+                    <span class="featured_tag">Sale</span>
+                    <img src="./assets/img/featured1.png" alt="" class="featured_img">
+                    <div class="featured_data">
+                        <h3 class="featured_title">Jazzmaster</h3>
+                        <span class="featured_price">$1050</span>
+                    </div>
+                    <button class="button featured_button addItem">ADD TO CART</button>
+                </article>
+                <article class="featured_card">
+                    <span class="featured_tag">Sale</span>
+                    <img src="./assets/img/featured2.png" alt="" class="featured_img">
+                    <div class="featured_data">
+                        <h3 class="featured_title">Ingersoll</h3>
+                        <span class="featured_price">$250</span>
+                    </div>
+                    <button class="button featured_button addItem">ADD TO CART</button>
+                </article>
+                <article class="featured_card">
+                    <span class="featured_tag">Sale</span>
+                    <img src="./assets/img/featured3.png" alt="" class="featured_img">
+                    <div class="featured_data">
+                        <h3 class="featured_title">Rose gold</h3>
+                        <span class="featured_price">$890</span>
+                    </div>
+                    <button class="button featured_button addItem">ADD TO CART</button>
+                </article>
+            </div>
+        </section>
+        <section class="story section container">
+            <div class="story_container grid">
+                <div class="story_data">
+                    <h2 class="section_title story_section-title">Our Story</h2>
+                    <h1 class="story_title">Inspirational Watch Of <br> The Year</h1>
+                    <p class="story_description">
+                        The latest and modern watches of this year, is available in various presentations in this store,
+                        discover them now.
+                    </p>
+                    <a href="#" class="button button--small">Discover</a>
+                </div>
+                <div class="story_images">
+                    <img src="./assets/img/story.png" alt="" class="story_img">
+                    <div class="story_square"></div>
+                </div>
+            </div>
+        </section>
+        <section class="products section container" id="products">
+            <h2 class="section_title">Products</h2>
+            <div class="products_container grid">
+                <article class="products_card">
+                    <img src="./assets/img/product1.png" alt="" class="products_img">
+                    <h3 class="products_title">Spirit rose</h3>
+                    <span class="products_price">$1500</span>
+                    <button class="products_button">
+                        <i class="bx bx-shopping-bag addItem"></i>
+                    </button>
+                </article>
+                <article class="products_card">
+                    <img src="./assets/img/product2.png" alt="" class="products_img">
+                    <h3 class="products_title">Khaki pilot</h3>
+                    <span class="products_price">$1350</span>
+                    <button class="products_button">
+                        <i class="bx bx-shopping-bag addItem"></i>
+                    </button>
+                </article>
+                <article class="products_card">
+                    <img src="./assets/img/product3.png" alt="" class="products_img">
+                    <h3 class="products_title">Jubilee black</h3>
+                    <span class="products_price">$870</span>
+                    <button class="products_button">
+                        <i class="bx bx-shopping-bag addItem"></i>
+                    </button>
+                </article>
+                <article class="products_card">
+                    <img src="./assets/img/product4.png" alt="" class="products_img">
+                    <h3 class="products_title">Fosil me3</h3>
+                    <span class="products_price">$650</span>
+                    <button class="products_button">
+                        <i class="bx bx-shopping-bag addItem"></i>
+                    </button>
+                </article>
+                <article class="products_card">
+                    <img src="./assets/img/product5.png" alt="" class="products_img">
+                    <h3 class="products_title">Duchen</h3>
+                    <span class="products_price">$950</span>
+                    <button class="products_button">
+                        <i class="bx bx-shopping-bag addItem"></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+        <section class="testimonial section container">
+            <div class="testimonial_container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial_card swiper-slide">
+                            <div class="testimonial_quote">
+                                <i class="bx bxs-quote-alt-left"></i>
+                            </div>
+                            <p class="testimonial_description">
+                                They are the best watches that one acquires, also they are always with the latest news
+                                and trends, with a very comfortable price and especially with the attention you receive,
+                                they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial_date">March 27, 2021</h3>
+                            <div class="testimonial_prefil">
+                                <img src="./assets/img/testimonial1.jpg" alt="" class="testimonial_prefil-img">
+                                <div class="testimonial_prefil-data">
+                                    <span class="testimonial_prefil-name">Lee Doe</span>
+                                    <span class="testimonial_prefil-details">Director of the company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_card swiper-slide">
+                            <div class="testimonial_quote">
+                                <i class="bx bxs-quote-alt-left"></i>
+                            </div>
+                            <p class="testimonial_description">
+                                They are the best watches that one acquires, also they are always with the latest news
+                                and trends, with a very comfortable price and especially with the attention you receive,
+                                they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial_date">March 27, 2021</h3>
+                            <div class="testimonial_prefil">
+                                <img src="./assets/img/testimonial2.jpg" alt="" class="testimonial_prefil-img">
+                                <div class="testimonial_prefil-data">
+                                    <span class="testimonial_prefil-name">Samantha Mey</span>
+                                    <span class="testimonial_prefil-details">Director of the company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_card swiper-slide">
+                            <div class="testimonial_quote">
+                                <i class="bx bxs-quote-alt-left"></i>
+                            </div>
+                            <p class="testimonial_description">
+                                They are the best watches that one acquires, also they are always with the latest news
+                                and trends, with a very comfortable price and especially with the attention you receive,
+                                they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial_date">March 27, 2021</h3>
+                            <div class="testimonial_prefil">
+                                <img src="./assets/img/testimonial3.jpg" alt="" class="testimonial_prefil-img">
+                                <div class="testimonial_prefil-data">
+                                    <span class="testimonial_prefil-name">Raul Zaman</span>
+                                    <span class="testimonial_prefil-details">Director of the company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="bx bx-right-arrow-alt"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="bx bx-left-arrow-alt"></i>
+                    </div>
+                </div>
+                <div class="testimonial_images">
+                    <div class="testimonial_square"></div>
+                    <img src="./assets/img/testimonial.png" alt="" class="testimonial_img">
+                </div>
+            </div>
+        </section>
+        <section class="new section container" id="new">
+            <h2 class="section_title">NEW ARRIVALS</h2>
+            <div class="new_container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new_card swiper-slide">
+                            <span class="new_tag">NEW</span>
+                            <img src="./assets/img/new1.png" alt="" class="new_img">
+                            <div class="new_data">
+                                <h3 class="new_title">Longines rose</h3>
+                                <span class="new_price">$980</span>
+                            </div>
+                            <button class="button new_button addItem">ADD TO CART</button>
+                        </article>
+                        <article class="new_card swiper-slide">
+                            <span class="new_tag">NEW</span>
+                            <img src="./assets/img/new2.png" alt="" class="new_img">
+                            <div class="new_data">
+                                <h3 class="new_title">Jazzmaster</h3>
+                                <span class="new_price">$1150</span>
+                            </div>
+                            <button class="button new_button addItem">ADD TO CART</button>
+                        </article>
+                        <article class="new_card swiper-slide">
+                            <span class="new_tag">NEW</span>
+                            <img src="./assets/img/new3.png" alt="" class="new_img">
+                            <div class="new_data">
+                                <h3 class="new_title">Dreyfuss gold</h3>
+                                <span class="new_price">$750</span>
+                            </div>
+                            <button class="button new_button addItem">ADD TO CART</button>
+                        </article>
+                        <article class="new_card swiper-slide">
+                            <span class="new_tag">NEW</span>
+                            <img src="./assets/img/new4.png" alt="" class="new_img">
+                            <div class="new_data">
+                                <h3 class="new_title">Portuguese rose</h3>
+                                <span class="new_price">$1590</span>
+                            </div>
+                            <button class="button new_button addItem">ADD TO CART</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter section container">
+            <div class="newsletter_bg grid">
+                <div>
+                    <h2 class="newsletter_title">
+                        Subscribe Our <br> Newsletter
+                    </h2>
+                    <p class="newsletter_description">
+                        Don't miss out on our discounts, Subscribe to our email newsletter to get the best offers,
+                        discounts, coupons, gifts and much more.
+                    </p>
+                </div>
+                <form action="" class="newsletter_subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter_input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section">
+        <div class="footer_container container grid">
+            <div class="footer_content">
+                <h3 class="footer_title">Our Information</h3>
+                <ul class="footer_list">
+                    <li>1234 - Peru</li>
+                    <li>La Libertad 43210</li>
+                    <li>123-456-789</li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h3 class="footer_title">About Us</h3>
+                <ul class="footer_links">
+                    <li>
+                        <a href="" class="footer_link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Copyright</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h3 class="footer_title">Product</h3>
+                <ul class="footer_links">
+                    <li>
+                        <a href="" class="footer_link">Road Bikes</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Mountain Bikes</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Electric</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer_link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h3 class="footer_title">Social</h3>
+                <ul class="footer_social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer_social-link">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer_social-link">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="footer_social-link">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <span class="footer_copy">
+            @TimelessTicks, All rights reserved
+        </span>
+    </footer>
+
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup_icon"></i>
+    </a>
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        let testimonialSwiper = new Swiper(".testimonial-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            observer: true,
+            observeParents: true,
+        })
+    </script>
+    <script>
+        let newSwiper = new Swiper(".new-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            observer: true,
+            observeParents: true,
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>
